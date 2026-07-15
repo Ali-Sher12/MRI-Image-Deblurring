@@ -57,9 +57,9 @@ def pkload(fname):
     return pickle.load(open(fname, 'rb'))
 
 
-folder1 = "/home/jarvis/Documents/MRI Data/IXI_data/IXI_data/Test/"
-folder2 = "/home/jarvis/Documents/MRI Data/IXI_data/IXI_data/Train/"
-folder3 = "/home/jarvis/Documents/MRI Data/IXI_data/IXI_data/Val/"
+folder1 = "/home/jarvis/Documents/MRI Data/IXI_data/Test/"
+folder2 = "/home/jarvis/Documents/MRI Data/IXI_data/Train/"
+folder3 = "/home/jarvis/Documents/MRI Data/IXI_data/Val/"
 folderList = [folder1,folder2,folder3]
 
 save_as_volume = int(input("\nSave files as entire volumes(1 for yes, 0 for no) : "))
@@ -77,12 +77,12 @@ if __name__ == "__main__":
             tamperedVoxelCluster = VoxelCluster.copy()
             slice_index = 0
             if save_as_volume == 1:    
-                np.save(folderName +"/" + name + ".npy", VoxelCluster)
+                np.save(folderName +"/" + name + ".npy", VoxelCluster.astype(np.float16))
             for slice in VoxelCluster:
                 if save_images == 1:
                     save_as_png(slice,folderName + "/" + name +"_"+ str(slice_index) + ".png")
                 if save_as_slice == 1:    
-                    np.save(folderName +"/" + name +"_"+ str(slice_index)+ ".npy", slice)
+                    np.save(folderName +"/" + name +"_"+ str(slice_index)+ ".npy", slice.astype(np.float16))
 
                 max_shift = random.uniform(max_shift_min, max_shift_max)
                 keep_fraction_either_side = random.uniform(keep_fraction_either_side_min,keep_fraction_either_side_max)
@@ -99,10 +99,10 @@ if __name__ == "__main__":
                 tamperedVoxelCluster[slice_index] = tamperedSlice
 
                 if save_as_slice == 1:
-                    np.save(folderName + "/" + name + "_blurred_"+ str(slice_index) + ".npy", tamperedSlice)
+                    np.save(folderName + "/" + name + "_blurred_"+ str(slice_index) + ".npy", tamperedSlice.astype(np.float16))
                 if save_images == 1:
                     save_as_png(tamperedSlice,folderName + "/" + name + "_blurred_"+ str(slice_index) + ".png")
 
                 slice_index+=1
             if save_as_volume == 1:    
-                np.save(folderName +"/blurred_" + name + ".npy", tamperedVoxelCluster)
+                np.save(folderName +"/blurred_" + name + ".npy", tamperedVoxelCluster.astype(np.float16))
