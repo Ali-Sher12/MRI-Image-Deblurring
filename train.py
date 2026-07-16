@@ -14,8 +14,9 @@ BATCH_SIZE = 4
 NUM_EPOCHS = 50
 LEARNING_RATE = 1e-4
 
-TRAIN_FOLDER = "/content/train_data"
-VAL_FOLDER = "/content/val_data"
+TRAIN_FOLDER = "/content/train_data/Train"
+VAL_FOLDER = "/content/train_data/Val"
+TEST_FOLDER = "/content/train_data/Test"
 
 # Save checkpoints to the mounted Drive (train+val account), not just local
 # disk, so a Colab disconnect doesn't wipe out your progress.

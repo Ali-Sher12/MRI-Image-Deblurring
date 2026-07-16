@@ -4,8 +4,9 @@ from google.colab import drive
 drive.mount('/content/drive')  # log in with your TRAIN+VAL account
 
 # Copy data locally (fast local disk instead of slow Drive I/O during training)
-!cp -r "/content/drive/MyDrive/train_data" "/content/train_data"
-!cp -r "/content/drive/MyDrive/val_data" "/content/val_data"
+# after mounting a truly fresh Drive:
+!cp "/content/drive/MyDrive/IXI_data.zip" "/content/train_data.zip"
+!unzip -q /content/train_data.zip -d /content/train_data
 
 # Copy your code files locally too (store them in the same Drive account
 # so they travel with the data instead of re-uploading each session)

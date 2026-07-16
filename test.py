@@ -12,8 +12,13 @@ from Model import ResUNet3D
 # ----------------------------------------------------------------------
 # Global config
 # ----------------------------------------------------------------------
-TEST_FOLDER = "/content/test_data"
-CHECKPOINT_PATH = "/content/drive/MyDrive/checkpoints/best_checkpoint.pth"
+TEST_FOLDER = "/content/train_data/Test"       # match your actual folder name/case
+CHECKPOINT_PATH = "/content/best_checkpoint.pth"  # local copy from step 2
+
+TRAIN_FOLDER = "/content/train_data/Train"
+VAL_FOLDER = "/content/train_data/Val"
+TEST_FOLDER = "/content/train_data/Test"
+#CHECKPOINT_PATH = "/content/drive/MyDrive/checkpoints/best_checkpoint.pth"
 RESULTS_DIR = "/content/test_results"
 NUM_VISUAL_SAMPLES = 5   # how many subjects to save slice images for
 

@@ -1,0 +1,198 @@
+/content/train.py:109: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler()
+/content/train.py:126: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+/content/train.py:74: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Epoch [1/50] - Train Loss: 0.096978 - Val Loss: 0.050569
+  -> New best val loss (0.050569), checkpoint saved.
+Epoch [2/50] - Train Loss: 0.044234 - Val Loss: 0.038606
+  -> New best val loss (0.038606), checkpoint saved.
+Epoch [3/50] - Train Loss: 0.036982 - Val Loss: 0.033945
+  -> New best val loss (0.033945), checkpoint saved.
+Epoch [4/50] - Train Loss: 0.033320 - Val Loss: 0.031650
+  -> New best val loss (0.031650), checkpoint saved.
+Epoch [5/50] - Train Loss: 0.031363 - Val Loss: 0.031047
+  -> New best val loss (0.031047), checkpoint saved.
+Epoch [6/50] - Train Loss: 0.029636 - Val Loss: 0.028936
+  -> New best val loss (0.028936), checkpoint saved.
+Epoch [7/50] - Train Loss: 0.028892 - Val Loss: 0.027398
+  -> New best val loss (0.027398), checkpoint saved.
+Epoch [8/50] - Train Loss: 0.027539 - Val Loss: 0.025948
+  -> New best val loss (0.025948), checkpoint saved.
+Epoch [9/50] - Train Loss: 0.026664 - Val Loss: 0.026703
+Epoch [10/50] - Train Loss: 0.026150 - Val Loss: 0.026705
+Epoch [11/50] - Train Loss: 0.025588 - Val Loss: 0.025531
+  -> New best val loss (0.025531), checkpoint saved.
+Epoch [12/50] - Train Loss: 0.025300 - Val Loss: 0.024118
+  -> New best val loss (0.024118), checkpoint saved.
+Epoch [13/50] - Train Loss: 0.024805 - Val Loss: 0.024785
+Epoch [14/50] - Train Loss: 0.024798 - Val Loss: 0.023865
+  -> New best val loss (0.023865), checkpoint saved.
+Epoch [15/50] - Train Loss: 0.024191 - Val Loss: 0.024200
+Epoch [16/50] - Train Loss: 0.024096 - Val Loss: 0.024107
+Epoch [17/50] - Train Loss: 0.023642 - Val Loss: 0.023183
+  -> New best val loss (0.023183), checkpoint saved.
+Epoch [18/50] - Train Loss: 0.023361 - Val Loss: 0.021561
+  -> New best val loss (0.021561), checkpoint saved.
+Epoch [19/50] - Train Loss: 0.023222 - Val Loss: 0.022154
+Epoch [20/50] - Train Loss: 0.022689 - Val Loss: 0.022022
+Epoch [21/50] - Train Loss: 0.022527 - Val Loss: 0.023178
+Epoch [22/50] - Train Loss: 0.021911 - Val Loss: 0.022457
+Epoch [23/50] - Train Loss: 0.022103 - Val Loss: 0.021690
+Epoch [24/50] - Train Loss: 0.021844 - Val Loss: 0.020462
+  -> New best val loss (0.020462), checkpoint saved.
+Epoch [25/50] - Train Loss: 0.021890 - Val Loss: 0.020387
+  -> New best val loss (0.020387), checkpoint saved.
+Epoch [26/50] - Train Loss: 0.022060 - Val Loss: 0.021362
+Epoch [27/50] - Train Loss: 0.021267 - Val Loss: 0.021659
+Epoch [28/50] - Train Loss: 0.021606 - Val Loss: 0.020716
+Epoch [29/50] - Train Loss: 0.021464 - Val Loss: 0.020469
+Epoch [30/50] - Train Loss: 0.021185 - Val Loss: 0.021628
+Epoch [31/50] - Train Loss: 0.021056 - Val Loss: 0.020497
+Epoch [32/50] - Train Loss: 0.021203 - Val Loss: 0.020729
+Epoch [33/50] - Train Loss: 0.020670 - Val Loss: 0.020005
+  -> New best val loss (0.020005), checkpoint saved.
+Epoch [34/50] - Train Loss: 0.020468 - Val Loss: 0.020726
+Epoch [35/50] - Train Loss: 0.020411 - Val Loss: 0.020012
+Epoch [36/50] - Train Loss: 0.020501 - Val Loss: 0.020043
+Epoch [37/50] - Train Loss: 0.019959 - Val Loss: 0.020616
+Epoch [38/50] - Train Loss: 0.020380 - Val Loss: 0.020090
+Epoch [39/50] - Train Loss: 0.019769 - Val Loss: 0.021267
+Epoch [40/50] - Train Loss: 0.019652 - Val Loss: 0.020490
+Epoch [41/50] - Train Loss: 0.019776 - Val Loss: 0.019773
+  -> New best val loss (0.019773), checkpoint saved.
+Epoch [42/50] - Train Loss: 0.020002 - Val Loss: 0.019258
+  -> New best val loss (0.019258), checkpoint saved.
+Epoch [43/50] - Train Loss: 0.019942 - Val Loss: 0.019717
+Epoch [44/50] - Train Loss: 0.019707 - Val Loss: 0.019044
+  -> New best val loss (0.019044), checkpoint saved.
+Epoch [45/50] - Train Loss: 0.019697 - Val Loss: 0.019189
+Epoch [46/50] - Train Loss: 0.018992 - Val Loss: 0.018392
+  -> New best val loss (0.018392), checkpoint saved.
+Epoch [47/50] - Train Loss: 0.019909 - Val Loss: 0.019632
+Epoch [48/50] - Train Loss: 0.019593 - Val Loss: 0.020535
+Epoch [49/50] - Train Loss: 0.019586 - Val Loss: 0.019217
+Epoch [50/50] - Train Loss: 0.019159 - Val Loss: 0.018844
+
+Loaded checkpoint from epoch 45 (val loss at save time: 0.018392)
+Subject 0: L1=0.018420  PSNR=28.03dB  SSIM=0.4102
+Subject 1: L1=0.014636  PSNR=30.39dB  SSIM=0.5814
+Subject 2: L1=0.015308  PSNR=30.78dB  SSIM=0.6253
+Subject 3: L1=0.014934  PSNR=29.77dB  SSIM=0.5029
+Subject 4: L1=0.016779  PSNR=30.05dB  SSIM=0.4604
+Subject 5: L1=0.014173  PSNR=31.02dB  SSIM=0.5806
+Subject 6: L1=0.013255  PSNR=30.83dB  SSIM=0.6081
+Subject 7: L1=0.016815  PSNR=31.81dB  SSIM=0.5479
+Subject 8: L1=0.016551  PSNR=28.79dB  SSIM=0.4413
+Subject 9: L1=0.015248  PSNR=29.31dB  SSIM=0.5551
+Subject 10: L1=0.014712  PSNR=31.16dB  SSIM=0.6025
+Subject 11: L1=0.016684  PSNR=28.63dB  SSIM=0.4400
+Subject 12: L1=0.016287  PSNR=29.90dB  SSIM=0.4786
+Subject 13: L1=0.014269  PSNR=29.96dB  SSIM=0.5532
+Subject 14: L1=0.015815  PSNR=30.37dB  SSIM=0.5141
+Subject 15: L1=0.014655  PSNR=30.51dB  SSIM=0.5873
+Subject 16: L1=0.016418  PSNR=30.46dB  SSIM=0.5178
+Subject 17: L1=0.015774  PSNR=30.45dB  SSIM=0.5493
+Subject 18: L1=0.015598  PSNR=28.81dB  SSIM=0.4689
+Subject 19: L1=0.016652  PSNR=28.52dB  SSIM=0.4378
+Subject 20: L1=0.018155  PSNR=31.93dB  SSIM=0.5111
+Subject 21: L1=0.014550  PSNR=30.59dB  SSIM=0.5661
+Subject 22: L1=0.017080  PSNR=28.57dB  SSIM=0.4428
+Subject 23: L1=0.016067  PSNR=28.98dB  SSIM=0.4793
+Subject 24: L1=0.015573  PSNR=30.03dB  SSIM=0.5205
+Subject 25: L1=0.016280  PSNR=30.07dB  SSIM=0.4976
+Subject 26: L1=0.017571  PSNR=30.42dB  SSIM=0.4866
+Subject 27: L1=0.016141  PSNR=29.88dB  SSIM=0.5105
+Subject 28: L1=0.016677  PSNR=31.83dB  SSIM=0.5591
+Subject 29: L1=0.015499  PSNR=30.36dB  SSIM=0.5456
+Subject 30: L1=0.016437  PSNR=29.55dB  SSIM=0.5599
+Subject 31: L1=0.015819  PSNR=30.77dB  SSIM=0.5290
+Subject 32: L1=0.017115  PSNR=29.19dB  SSIM=0.4464
+Subject 33: L1=0.015702  PSNR=30.27dB  SSIM=0.5209
+Subject 34: L1=0.017371  PSNR=29.96dB  SSIM=0.4593
+Subject 35: L1=0.015478  PSNR=30.87dB  SSIM=0.5216
+Subject 36: L1=0.014736  PSNR=31.03dB  SSIM=0.6007
+Subject 37: L1=0.014861  PSNR=29.47dB  SSIM=0.4850
+Subject 38: L1=0.017000  PSNR=30.03dB  SSIM=0.4464
+Subject 39: L1=0.016045  PSNR=28.97dB  SSIM=0.4763
+Subject 40: L1=0.014506  PSNR=30.30dB  SSIM=0.5736
+Subject 41: L1=0.015258  PSNR=29.17dB  SSIM=0.4736
+Subject 42: L1=0.015836  PSNR=30.32dB  SSIM=0.4858
+Subject 43: L1=0.014013  PSNR=30.56dB  SSIM=0.5671
+Subject 44: L1=0.016673  PSNR=30.18dB  SSIM=0.5253
+Subject 45: L1=0.014047  PSNR=32.42dB  SSIM=0.6617
+Subject 46: L1=0.017120  PSNR=30.41dB  SSIM=0.4586
+Subject 47: L1=0.015221  PSNR=32.04dB  SSIM=0.5589
+Subject 48: L1=0.014803  PSNR=30.01dB  SSIM=0.5270
+Subject 49: L1=0.017900  PSNR=29.87dB  SSIM=0.4280
+Subject 50: L1=0.014925  PSNR=31.00dB  SSIM=0.5682
+Subject 51: L1=0.016449  PSNR=30.25dB  SSIM=0.4839
+Subject 52: L1=0.015129  PSNR=31.23dB  SSIM=0.6545
+Subject 53: L1=0.016152  PSNR=30.71dB  SSIM=0.5197
+Subject 54: L1=0.015596  PSNR=30.79dB  SSIM=0.5721
+Subject 55: L1=0.016888  PSNR=30.08dB  SSIM=0.4823
+Subject 56: L1=0.017139  PSNR=30.35dB  SSIM=0.4975
+Subject 57: L1=0.015813  PSNR=29.99dB  SSIM=0.5308
+Subject 58: L1=0.015905  PSNR=30.10dB  SSIM=0.5062
+Subject 59: L1=0.017575  PSNR=31.60dB  SSIM=0.5039
+Subject 60: L1=0.017294  PSNR=30.91dB  SSIM=0.4912
+Subject 61: L1=0.015775  PSNR=30.02dB  SSIM=0.5501
+Subject 62: L1=0.015246  PSNR=31.13dB  SSIM=0.5270
+Subject 63: L1=0.014276  PSNR=31.00dB  SSIM=0.5698
+Subject 64: L1=0.017125  PSNR=30.43dB  SSIM=0.4981
+Subject 65: L1=0.015247  PSNR=29.11dB  SSIM=0.5376
+Subject 66: L1=0.013950  PSNR=30.47dB  SSIM=0.6011
+Subject 67: L1=0.015035  PSNR=30.60dB  SSIM=0.5773
+Subject 68: L1=0.014769  PSNR=32.67dB  SSIM=0.6010
+Subject 69: L1=0.016482  PSNR=29.15dB  SSIM=0.4432
+Subject 70: L1=0.016051  PSNR=30.79dB  SSIM=0.5378
+Subject 71: L1=0.013574  PSNR=29.83dB  SSIM=0.6016
+Subject 72: L1=0.013079  PSNR=30.10dB  SSIM=0.5720
+Subject 73: L1=0.016393  PSNR=29.54dB  SSIM=0.4559
+Subject 74: L1=0.014633  PSNR=30.43dB  SSIM=0.5665
+Subject 75: L1=0.015219  PSNR=29.98dB  SSIM=0.5523
+Subject 76: L1=0.015133  PSNR=30.76dB  SSIM=0.5625
+Subject 77: L1=0.014067  PSNR=30.86dB  SSIM=0.5437
+Subject 78: L1=0.015775  PSNR=30.87dB  SSIM=0.5558
+Subject 79: L1=0.015902  PSNR=29.34dB  SSIM=0.5047
+Subject 80: L1=0.014731  PSNR=30.78dB  SSIM=0.5509
+Subject 81: L1=0.013281  PSNR=30.26dB  SSIM=0.5751
+Subject 82: L1=0.017296  PSNR=31.37dB  SSIM=0.5043
+Subject 83: L1=0.016078  PSNR=30.73dB  SSIM=0.5616
+Subject 84: L1=0.016307  PSNR=30.72dB  SSIM=0.5103
+Subject 85: L1=0.015422  PSNR=30.57dB  SSIM=0.5322
+Subject 86: L1=0.016043  PSNR=29.76dB  SSIM=0.5255
+Subject 87: L1=0.016097  PSNR=30.70dB  SSIM=0.5234
+Subject 88: L1=0.015504  PSNR=31.17dB  SSIM=0.5666
+Subject 89: L1=0.016460  PSNR=30.39dB  SSIM=0.4675
+Subject 90: L1=0.014456  PSNR=30.61dB  SSIM=0.6021
+Subject 91: L1=0.016611  PSNR=29.18dB  SSIM=0.4565
+Subject 92: L1=0.017525  PSNR=30.29dB  SSIM=0.4790
+Subject 93: L1=0.015913  PSNR=28.96dB  SSIM=0.4808
+Subject 94: L1=0.014622  PSNR=29.69dB  SSIM=0.5099
+Subject 95: L1=0.015750  PSNR=30.69dB  SSIM=0.5068
+Subject 96: L1=0.015757  PSNR=31.37dB  SSIM=0.5331
+Subject 97: L1=0.017734  PSNR=29.74dB  SSIM=0.4497
+Subject 98: L1=0.015955  PSNR=30.38dB  SSIM=0.5317
+Subject 99: L1=0.015802  PSNR=29.55dB  SSIM=0.4957
+Subject 100: L1=0.013937  PSNR=29.59dB  SSIM=0.5370
+Subject 101: L1=0.014524  PSNR=29.09dB  SSIM=0.5411
+Subject 102: L1=0.015308  PSNR=29.92dB  SSIM=0.5106
+Subject 103: L1=0.015931  PSNR=31.04dB  SSIM=0.5435
+Subject 104: L1=0.018491  PSNR=30.39dB  SSIM=0.4588
+Subject 105: L1=0.014655  PSNR=31.38dB  SSIM=0.5759
+Subject 106: L1=0.014189  PSNR=30.36dB  SSIM=0.5791
+Subject 107: L1=0.017529  PSNR=28.10dB  SSIM=0.4086
+Subject 108: L1=0.013894  PSNR=29.51dB  SSIM=0.5559
+Subject 109: L1=0.015044  PSNR=30.74dB  SSIM=0.5302
+Subject 110: L1=0.013920  PSNR=30.38dB  SSIM=0.5802
+Subject 111: L1=0.015972  PSNR=29.44dB  SSIM=0.4522
+Subject 112: L1=0.016174  PSNR=29.30dB  SSIM=0.5043
+Subject 113: L1=0.015378  PSNR=30.04dB  SSIM=0.4983
+Subject 114: L1=0.017527  PSNR=30.87dB  SSIM=0.5109
+
+--- Overall Test Set Results ---
+Mean L1:   0.015730
+Mean PSNR: 30.25 dB
+Mean SSIM: 0.5235
